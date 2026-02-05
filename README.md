@@ -34,6 +34,7 @@ docker run -it --rm \
 
 Then inside the container:
 ```bash
+apk add --no-cache git
 cd /app
 npm ci --prefix root
 npm run dev
