@@ -10,12 +10,12 @@
 
 1. Build the Docker image:
 ```bash
-docker build -t home-hub:dev .
+docker build --no-cache -t home-hub:dev .
 ```
 
 2. Run the development server:
 ```bash
-docker run -it --rm -p 9000:9000 home-hub:dev
+docker run -it --rm -p 9000:9000 -p 8500:8500 home-hub:dev
 ```
 
 The app will be available at `http://localhost:9000/`
@@ -28,6 +28,7 @@ If you prefer not to create a Dockerfile, you can run:
 docker run -it --rm \
   -v c:\Git\home-hub:/app \
   -p 9000:9000 \
+  -p 8500:8500 \
   --entrypoint sh \
   node:20-alpine
 ```
