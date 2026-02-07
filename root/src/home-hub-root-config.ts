@@ -10,15 +10,15 @@ registerApplication({
   activeWhen: ["/"],
 });
 
-// registerApplication({
-//   name: "@home-hub/navbar",
-//   app: () =>
-//     import(
-//       /* webpackIgnore: true */ // @ts-ignore-next
-//       "@home-hub/navbar"
-//     ),
-//   activeWhen: ["/"],
-// });
+registerApplication({
+  name: "@home-hub/hello-world",
+  app: () =>
+    import(
+      /* webpackIgnore: true */ // @ts-ignore-next
+      "@home-hub/hello-world"
+    ),
+  activeWhen: ["/"],
+});
 
 start({
   urlRerouteOnly: true,

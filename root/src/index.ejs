@@ -15,7 +15,12 @@
   <script type="injector-importmap">
     {
       "imports": {
-        "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@6.0.3/lib/es2015/esm/single-spa.min.js"
+        "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@6.0.3/lib/es2015/esm/single-spa.min.js",
+        "react": "https://ga.jspm.io/npm:react@18.3.1/dev.index.js",
+        "react/jsx-runtime": "https://ga.jspm.io/npm:react@18.3.1/dev/jsx-runtime.js",
+        "react-dom": "https://ga.jspm.io/npm:react-dom@18.3.1/dev.index.js",
+        "react-dom/client": "https://ga.jspm.io/npm:react-dom@18.3.1/dev.client.js",
+        "scheduler": "https://cdn.jsdelivr.net/npm/scheduler@0.23.0/+esm"
       }
     }
   </script>
@@ -29,6 +34,7 @@
     {
       "imports": {
         "@home-hub/root-config": "//localhost:9000/home-hub-root-config.js",
+        "@home-hub/hello-world": "//localhost:8500/home-hub-hello-world.js",
         "@single-spa/welcome": "https://cdn.jsdelivr.net/npm/single-spa-welcome/dist/single-spa-welcome.min.js"
       }
     }
