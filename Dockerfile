@@ -13,6 +13,8 @@ COPY hello-world/ ./hello-world/
 # Install dependencies for root and the hello-world microfrontend.
 # Use --legacy-peer-deps for hello-world to avoid ERESOLVE during install
 # (this mirrors common dev setups; remove if you prefer strict resolution).
+# HUSKY=0 skips husky install (no .git in the image).
+ENV HUSKY=0
 RUN npm ci --prefix root \
 	&& npm ci --prefix hello-world --legacy-peer-deps
 
