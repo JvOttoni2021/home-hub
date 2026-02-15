@@ -13,7 +13,7 @@ docker build --no-cache -t home-hub:dev .
 
 2. Run the development server:
 ```bash
-docker run -it --rm -p 9000:9000 -p 8500:8500 -p 8000:8000 home-hub:dev
+docker run -it --rm -p 9000:9000 -p 8500:8500 home-hub:dev
 ```
 
 The app will be available at `http://localhost:9000/`
