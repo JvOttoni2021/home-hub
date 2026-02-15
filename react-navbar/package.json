@@ -1,5 +1,5 @@
 {
-  "name": "@home-hub/hello-world",
+  "name": "@home-hub/react-navbar",
   "scripts": {
     "start": "webpack serve",
     "start:standalone": "webpack serve --env standalone",
@@ -55,5 +55,5 @@
     "@types/react": "^18.0.19",
     "@types/react-dom": "^18.0.6"
   },
-  "types": "dist/home-hub-hello-world.d.ts"
+  "types": "dist/home-hub-react-navbar.d.ts"
 }

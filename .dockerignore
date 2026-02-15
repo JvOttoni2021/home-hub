@@ -1,8 +1,10 @@
 node_modules
 hello-world/node_modules
 root/node_modules
+react-navbar/node_modules
 hello-world/dist
 root/dist
+react-navbar/dist
 hello-world/.git
 root/.git
 .git
